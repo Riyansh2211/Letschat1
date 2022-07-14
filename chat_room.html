@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Chat App</title>
+	<link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+	<script src="chat.js"></script>
+
+</head>
+
+<body>
+	<center>
+		<h1 class="header">
+			Chat Room <sup>
+
+			</head>
+			<body>
+			<div class="container">
+			<button id="logout" class="glyphicon glyphicon-log-out btn btn-danger" onclick="logout()">Logout</button>
+				<center>
+					<h1 class="header">	
+						Lets Chat!
+						<sup>
+							<img src="m2.png">
+						</sup>
+					</h1>
+					<h3 class="color_white" id="username"></h3>
+					<div class="form-group input_div_room_page">
+						<label class="color_white" style="font-size:20px;">#Add Room:</label>
+
+					
+					</div>
+					<input type="text" placeholder="Add Room" id="addroom" style="width:100%; text-align:center;" >
+					<br>
+					<br>
+					<button id="hi" class="btn btn-success" onclick="addRoom()" >#Add Room</button>
+					<br>
+					<h3 class="color_white">#TRENDINGROOMS</h3>
+					<div class="color_lightgrey" style="border-radius:10px;"></div>
+				
+				</center>
+			</div>
+			<script src="chat_room.js"></script>
+			</body>
+			</html>
